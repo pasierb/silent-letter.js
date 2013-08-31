@@ -13,3 +13,9 @@ var silentLetter =  new SilentLetter({
 
 silentLetter.reveal();
 ```
+
+TODO:
+-----
+
+* handle text containing html markup
+* fancy animations?
