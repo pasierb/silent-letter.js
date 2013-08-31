@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset=utf-8>
+    <title>A simple HTML5 page layout</title>
+    <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style type="text/css" media="all">
+      body {
+        font-size: 40px;
+      }
+    </style>
+    <link rel="stylesheet" href="css/silent_letter.css" />
+  </head>
+  <body>
+    <div id="envelope">
+      This is regular message, nothing special to look at.
+    </div>
+
+    <script src="js/silent_letter.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+      (function () {
+        var letter = new SilentLetter({
+          container: document.getElementById("envelope"),
+          message: "silent"
+        });
+
+        setTimeout((function(){
+          return function(){ letter.reveal(); }
+        })(), 1500);
+      })();
+    </script>
+  </body>
+</html>
+

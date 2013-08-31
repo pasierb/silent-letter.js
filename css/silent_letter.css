@@ -1,0 +1,68 @@
+.silent-letter-envelope {
+  color: #ddd;
+  -webkit-animation: fadeout 1s;
+  -moz-animation: fadeout 1s;
+  -ms-animation: fadeout 1s;
+  -o-animation: fadeout 1s;
+  animation: fadeout 1s;
+}
+span.silent-letter {
+  color: #111;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  animation: fadein 2s;
+}
+
+@-moz-keyframes fadein {
+  0% { color: #000; }
+  25% { color: #ddd; }
+  50% {  color: #ddd; }
+  100% { color: #111; }
+}
+@-ms-keyframes fadein {
+  0% { color: #000; }
+  25% { color: #ddd; }
+  50% {  color: #ddd; }
+  100% { color: #111; }
+}
+@-o-keyframes fadein {
+  0% { color: #000; }
+  25% { color: #ddd; }
+  50% {  color: #ddd; }
+  100% { color: #111; }
+}
+@keyframes fadein, {
+  0% { color: #000; }
+  25% { color: #ddd; }
+  50% {  color: #ddd; }
+  100% { color: #111; }
+}
+@-webkit-keyframes fadein {
+  0% { color: #000; }
+  25% { color: #ddd; }
+  50% {  color: #ddd; }
+  100% { color: #111; }
+}
+
+@-moz-keyframes fadeout {
+  0% { color: #000; }
+  100% { color: #ddd; }
+}
+@-ms-keyframes fadeout {
+  0% { color: #000; }
+  100% { color: #ddd; }
+}
+@-o-keyframes fadeout {
+  0% { color: #000; }
+  100% { color: #ddd; }
+}
+@keyframes fadeout {
+  0% { color: #000; }
+  100% { color: #ddd; }
+}
+@-webkit-keyframes fadeout {
+  0% { color: #000; }
+  100% { color: #ddd; }
+}
